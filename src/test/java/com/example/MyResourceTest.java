@@ -23,7 +23,7 @@ public class MyResourceTest extends JerseyTest {
     @Test
     public void testGetIt() {
         final String responseMsg = target().path("myresource").request().get(String.class);
-
+        // assert under test = new foodbar();
         assertEquals("Hello, Heroku!", responseMsg);
     }
 }

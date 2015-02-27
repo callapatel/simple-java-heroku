@@ -2,9 +2,9 @@ package com.example.heroku;
 
 
 import com.example.MyJaxbBean;
-import com.example.heroku.patel.anagramsolver.AnagramSolver;
-import com.example.heroku.patel.com.dictionary.Dictionary;
-import com.example.heroku.patel.com.dictionary.EnglishDictionary;
+import com.example.anagramsolver.AnagramSolver;
+import com.example.dictionary.Dictionary;
+import com.example.dictionary.EnglishDictionary;
 
 
 import javax.ws.rs.GET;
@@ -25,7 +25,7 @@ public class Anagram {
 //    public MyJaxbBean getMyBear(){
 //            return new MyJaxbBean("Agamenon", 32);
 //    }
-    public Set<String> getAnagram(@PathParam("say") String say ) {
+    public MyJaxbBean getAnagram(@PathParam("say") String say ) {
 
 
         Dictionary dictionary = new EnglishDictionary();
